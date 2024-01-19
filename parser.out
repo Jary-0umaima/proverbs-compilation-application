@@ -1,0 +1,807 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> proverb
+Rule 1     proverb -> proverb_1
+Rule 2     proverb -> proverb_2
+Rule 3     proverb -> proverb_3
+Rule 4     proverb -> proverb_4
+Rule 5     proverb -> proverb_5
+Rule 6     proverb -> proverb_6
+Rule 7     proverb -> proverb_7
+Rule 8     proverb -> proverb_8
+Rule 9     proverb -> proverb_9
+Rule 10    proverb -> proverb_10
+Rule 11    proverb -> prov1
+Rule 12    proverb -> prov2
+Rule 13    proverb -> prov3
+Rule 14    proverb -> prov4
+Rule 15    proverb -> prov5
+Rule 16    proverb -> prov6
+Rule 17    proverb -> prov7
+Rule 18    proverb -> prov8
+Rule 19    proverb -> prov9
+Rule 20    proverb -> prov10
+Rule 21    proverb_1 -> ISSM1 FI3L1 HARF1 ISSM2
+Rule 22    proverb_2 -> HARF2 FI3L2 ISSM3 FI3L3 ISSM4
+Rule 23    proverb_3 -> ISSM5 MODAF1 HARF3 ISSM6 MODAF2
+Rule 24    proverb_4 -> ISSM7 MODAF3 FI3L4 HARF1 ISSM8 MODAF2
+Rule 25    proverb_5 -> FI3L5 MAF3OLBIH1 FA FI3L5 MAF3OLBIH2
+Rule 26    proverb_6 -> FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4
+Rule 27    proverb_7 -> ISSM9 KHABAR1 HARF1 ISSM10
+Rule 28    proverb_8 -> ISSM11 HARF1 ISSM12 MODAF4
+Rule 29    proverb_9 -> FI3L9 MAF3OLBIH5 FI3L10
+Rule 30    proverb_10 -> FI3L11 MAF3OLBIH6 ISSM13 HARF2 FI3L12
+Rule 31    prov1 -> DELIMITER proverb_1
+Rule 32    prov2 -> DELIMITER proverb_2
+Rule 33    prov3 -> DELIMITER proverb_3
+Rule 34    prov4 -> DELIMITER proverb_4
+Rule 35    prov5 -> DELIMITER proverb_5
+Rule 36    prov6 -> DELIMITER proverb_6
+Rule 37    prov7 -> DELIMITER proverb_7
+Rule 38    prov8 -> DELIMITER proverb_8
+Rule 39    prov9 -> DELIMITER proverb_9
+Rule 40    prov10 -> DELIMITER proverb_10
+
+Terminals, with rules where they appear
+
+DELIMITER            : 31 32 33 34 35 36 37 38 39 40
+FA                   : 25
+FI3L1                : 21
+FI3L10               : 29
+FI3L11               : 30
+FI3L12               : 30
+FI3L2                : 22
+FI3L3                : 22
+FI3L4                : 24
+FI3L5                : 25 25
+FI3L6                : 26
+FI3L7                : 26
+FI3L8                : 26
+FI3L9                : 29
+HARF1                : 21 24 26 27 28
+HARF2                : 22 30
+HARF3                : 23
+HARFNAFY             : 26 26
+ISSM1                : 21
+ISSM10               : 27
+ISSM11               : 28
+ISSM12               : 28
+ISSM13               : 30
+ISSM2                : 21
+ISSM3                : 22
+ISSM4                : 22
+ISSM5                : 23
+ISSM6                : 23
+ISSM7                : 24
+ISSM8                : 24
+ISSM9                : 27
+KHABAR1              : 27
+MAF3OLBIH1           : 25
+MAF3OLBIH2           : 25
+MAF3OLBIH3           : 26
+MAF3OLBIH4           : 26
+MAF3OLBIH5           : 29
+MAF3OLBIH6           : 30
+MODAF1               : 23
+MODAF2               : 23 24
+MODAF3               : 24
+MODAF4               : 28
+WAW                  : 26
+error                : 
+
+Nonterminals, with rules where they appear
+
+prov1                : 11
+prov10               : 20
+prov2                : 12
+prov3                : 13
+prov4                : 14
+prov5                : 15
+prov6                : 16
+prov7                : 17
+prov8                : 18
+prov9                : 19
+proverb              : 0
+proverb_1            : 1 31
+proverb_10           : 10 40
+proverb_2            : 2 32
+proverb_3            : 3 33
+proverb_4            : 4 34
+proverb_5            : 5 35
+proverb_6            : 6 36
+proverb_7            : 7 37
+proverb_8            : 8 38
+proverb_9            : 9 39
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . proverb
+    (1) proverb -> . proverb_1
+    (2) proverb -> . proverb_2
+    (3) proverb -> . proverb_3
+    (4) proverb -> . proverb_4
+    (5) proverb -> . proverb_5
+    (6) proverb -> . proverb_6
+    (7) proverb -> . proverb_7
+    (8) proverb -> . proverb_8
+    (9) proverb -> . proverb_9
+    (10) proverb -> . proverb_10
+    (11) proverb -> . prov1
+    (12) proverb -> . prov2
+    (13) proverb -> . prov3
+    (14) proverb -> . prov4
+    (15) proverb -> . prov5
+    (16) proverb -> . prov6
+    (17) proverb -> . prov7
+    (18) proverb -> . prov8
+    (19) proverb -> . prov9
+    (20) proverb -> . prov10
+    (21) proverb_1 -> . ISSM1 FI3L1 HARF1 ISSM2
+    (22) proverb_2 -> . HARF2 FI3L2 ISSM3 FI3L3 ISSM4
+    (23) proverb_3 -> . ISSM5 MODAF1 HARF3 ISSM6 MODAF2
+    (24) proverb_4 -> . ISSM7 MODAF3 FI3L4 HARF1 ISSM8 MODAF2
+    (25) proverb_5 -> . FI3L5 MAF3OLBIH1 FA FI3L5 MAF3OLBIH2
+    (26) proverb_6 -> . FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4
+    (27) proverb_7 -> . ISSM9 KHABAR1 HARF1 ISSM10
+    (28) proverb_8 -> . ISSM11 HARF1 ISSM12 MODAF4
+    (29) proverb_9 -> . FI3L9 MAF3OLBIH5 FI3L10
+    (30) proverb_10 -> . FI3L11 MAF3OLBIH6 ISSM13 HARF2 FI3L12
+    (31) prov1 -> . DELIMITER proverb_1
+    (32) prov2 -> . DELIMITER proverb_2
+    (33) prov3 -> . DELIMITER proverb_3
+    (34) prov4 -> . DELIMITER proverb_4
+    (35) prov5 -> . DELIMITER proverb_5
+    (36) prov6 -> . DELIMITER proverb_6
+    (37) prov7 -> . DELIMITER proverb_7
+    (38) prov8 -> . DELIMITER proverb_8
+    (39) prov9 -> . DELIMITER proverb_9
+    (40) prov10 -> . DELIMITER proverb_10
+
+    ISSM1           shift and go to state 22
+    HARF2           shift and go to state 23
+    ISSM5           shift and go to state 24
+    ISSM7           shift and go to state 25
+    FI3L5           shift and go to state 26
+    FI3L6           shift and go to state 27
+    ISSM9           shift and go to state 28
+    ISSM11          shift and go to state 29
+    FI3L9           shift and go to state 30
+    FI3L11          shift and go to state 31
+    DELIMITER       shift and go to state 32
+
+    proverb                        shift and go to state 1
+    proverb_1                      shift and go to state 2
+    proverb_2                      shift and go to state 3
+    proverb_3                      shift and go to state 4
+    proverb_4                      shift and go to state 5
+    proverb_5                      shift and go to state 6
+    proverb_6                      shift and go to state 7
+    proverb_7                      shift and go to state 8
+    proverb_8                      shift and go to state 9
+    proverb_9                      shift and go to state 10
+    proverb_10                     shift and go to state 11
+    prov1                          shift and go to state 12
+    prov2                          shift and go to state 13
+    prov3                          shift and go to state 14
+    prov4                          shift and go to state 15
+    prov5                          shift and go to state 16
+    prov6                          shift and go to state 17
+    prov7                          shift and go to state 18
+    prov8                          shift and go to state 19
+    prov9                          shift and go to state 20
+    prov10                         shift and go to state 21
+
+state 1
+
+    (0) S' -> proverb .
+
+
+
+state 2
+
+    (1) proverb -> proverb_1 .
+
+    $end            reduce using rule 1 (proverb -> proverb_1 .)
+
+
+state 3
+
+    (2) proverb -> proverb_2 .
+
+    $end            reduce using rule 2 (proverb -> proverb_2 .)
+
+
+state 4
+
+    (3) proverb -> proverb_3 .
+
+    $end            reduce using rule 3 (proverb -> proverb_3 .)
+
+
+state 5
+
+    (4) proverb -> proverb_4 .
+
+    $end            reduce using rule 4 (proverb -> proverb_4 .)
+
+
+state 6
+
+    (5) proverb -> proverb_5 .
+
+    $end            reduce using rule 5 (proverb -> proverb_5 .)
+
+
+state 7
+
+    (6) proverb -> proverb_6 .
+
+    $end            reduce using rule 6 (proverb -> proverb_6 .)
+
+
+state 8
+
+    (7) proverb -> proverb_7 .
+
+    $end            reduce using rule 7 (proverb -> proverb_7 .)
+
+
+state 9
+
+    (8) proverb -> proverb_8 .
+
+    $end            reduce using rule 8 (proverb -> proverb_8 .)
+
+
+state 10
+
+    (9) proverb -> proverb_9 .
+
+    $end            reduce using rule 9 (proverb -> proverb_9 .)
+
+
+state 11
+
+    (10) proverb -> proverb_10 .
+
+    $end            reduce using rule 10 (proverb -> proverb_10 .)
+
+
+state 12
+
+    (11) proverb -> prov1 .
+
+    $end            reduce using rule 11 (proverb -> prov1 .)
+
+
+state 13
+
+    (12) proverb -> prov2 .
+
+    $end            reduce using rule 12 (proverb -> prov2 .)
+
+
+state 14
+
+    (13) proverb -> prov3 .
+
+    $end            reduce using rule 13 (proverb -> prov3 .)
+
+
+state 15
+
+    (14) proverb -> prov4 .
+
+    $end            reduce using rule 14 (proverb -> prov4 .)
+
+
+state 16
+
+    (15) proverb -> prov5 .
+
+    $end            reduce using rule 15 (proverb -> prov5 .)
+
+
+state 17
+
+    (16) proverb -> prov6 .
+
+    $end            reduce using rule 16 (proverb -> prov6 .)
+
+
+state 18
+
+    (17) proverb -> prov7 .
+
+    $end            reduce using rule 17 (proverb -> prov7 .)
+
+
+state 19
+
+    (18) proverb -> prov8 .
+
+    $end            reduce using rule 18 (proverb -> prov8 .)
+
+
+state 20
+
+    (19) proverb -> prov9 .
+
+    $end            reduce using rule 19 (proverb -> prov9 .)
+
+
+state 21
+
+    (20) proverb -> prov10 .
+
+    $end            reduce using rule 20 (proverb -> prov10 .)
+
+
+state 22
+
+    (21) proverb_1 -> ISSM1 . FI3L1 HARF1 ISSM2
+
+    FI3L1           shift and go to state 33
+
+
+state 23
+
+    (22) proverb_2 -> HARF2 . FI3L2 ISSM3 FI3L3 ISSM4
+
+    FI3L2           shift and go to state 34
+
+
+state 24
+
+    (23) proverb_3 -> ISSM5 . MODAF1 HARF3 ISSM6 MODAF2
+
+    MODAF1          shift and go to state 35
+
+
+state 25
+
+    (24) proverb_4 -> ISSM7 . MODAF3 FI3L4 HARF1 ISSM8 MODAF2
+
+    MODAF3          shift and go to state 36
+
+
+state 26
+
+    (25) proverb_5 -> FI3L5 . MAF3OLBIH1 FA FI3L5 MAF3OLBIH2
+
+    MAF3OLBIH1      shift and go to state 37
+
+
+state 27
+
+    (26) proverb_6 -> FI3L6 . HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4
+
+    HARF1           shift and go to state 38
+
+
+state 28
+
+    (27) proverb_7 -> ISSM9 . KHABAR1 HARF1 ISSM10
+
+    KHABAR1         shift and go to state 39
+
+
+state 29
+
+    (28) proverb_8 -> ISSM11 . HARF1 ISSM12 MODAF4
+
+    HARF1           shift and go to state 40
+
+
+state 30
+
+    (29) proverb_9 -> FI3L9 . MAF3OLBIH5 FI3L10
+
+    MAF3OLBIH5      shift and go to state 41
+
+
+state 31
+
+    (30) proverb_10 -> FI3L11 . MAF3OLBIH6 ISSM13 HARF2 FI3L12
+
+    MAF3OLBIH6      shift and go to state 42
+
+
+state 32
+
+    (31) prov1 -> DELIMITER . proverb_1
+    (32) prov2 -> DELIMITER . proverb_2
+    (33) prov3 -> DELIMITER . proverb_3
+    (34) prov4 -> DELIMITER . proverb_4
+    (35) prov5 -> DELIMITER . proverb_5
+    (36) prov6 -> DELIMITER . proverb_6
+    (37) prov7 -> DELIMITER . proverb_7
+    (38) prov8 -> DELIMITER . proverb_8
+    (39) prov9 -> DELIMITER . proverb_9
+    (40) prov10 -> DELIMITER . proverb_10
+    (21) proverb_1 -> . ISSM1 FI3L1 HARF1 ISSM2
+    (22) proverb_2 -> . HARF2 FI3L2 ISSM3 FI3L3 ISSM4
+    (23) proverb_3 -> . ISSM5 MODAF1 HARF3 ISSM6 MODAF2
+    (24) proverb_4 -> . ISSM7 MODAF3 FI3L4 HARF1 ISSM8 MODAF2
+    (25) proverb_5 -> . FI3L5 MAF3OLBIH1 FA FI3L5 MAF3OLBIH2
+    (26) proverb_6 -> . FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4
+    (27) proverb_7 -> . ISSM9 KHABAR1 HARF1 ISSM10
+    (28) proverb_8 -> . ISSM11 HARF1 ISSM12 MODAF4
+    (29) proverb_9 -> . FI3L9 MAF3OLBIH5 FI3L10
+    (30) proverb_10 -> . FI3L11 MAF3OLBIH6 ISSM13 HARF2 FI3L12
+
+    ISSM1           shift and go to state 22
+    HARF2           shift and go to state 23
+    ISSM5           shift and go to state 24
+    ISSM7           shift and go to state 25
+    FI3L5           shift and go to state 26
+    FI3L6           shift and go to state 27
+    ISSM9           shift and go to state 28
+    ISSM11          shift and go to state 29
+    FI3L9           shift and go to state 30
+    FI3L11          shift and go to state 31
+
+    proverb_1                      shift and go to state 43
+    proverb_2                      shift and go to state 44
+    proverb_3                      shift and go to state 45
+    proverb_4                      shift and go to state 46
+    proverb_5                      shift and go to state 47
+    proverb_6                      shift and go to state 48
+    proverb_7                      shift and go to state 49
+    proverb_8                      shift and go to state 50
+    proverb_9                      shift and go to state 51
+    proverb_10                     shift and go to state 52
+
+state 33
+
+    (21) proverb_1 -> ISSM1 FI3L1 . HARF1 ISSM2
+
+    HARF1           shift and go to state 53
+
+
+state 34
+
+    (22) proverb_2 -> HARF2 FI3L2 . ISSM3 FI3L3 ISSM4
+
+    ISSM3           shift and go to state 54
+
+
+state 35
+
+    (23) proverb_3 -> ISSM5 MODAF1 . HARF3 ISSM6 MODAF2
+
+    HARF3           shift and go to state 55
+
+
+state 36
+
+    (24) proverb_4 -> ISSM7 MODAF3 . FI3L4 HARF1 ISSM8 MODAF2
+
+    FI3L4           shift and go to state 56
+
+
+state 37
+
+    (25) proverb_5 -> FI3L5 MAF3OLBIH1 . FA FI3L5 MAF3OLBIH2
+
+    FA              shift and go to state 57
+
+
+state 38
+
+    (26) proverb_6 -> FI3L6 HARF1 . HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4
+
+    HARFNAFY        shift and go to state 58
+
+
+state 39
+
+    (27) proverb_7 -> ISSM9 KHABAR1 . HARF1 ISSM10
+
+    HARF1           shift and go to state 59
+
+
+state 40
+
+    (28) proverb_8 -> ISSM11 HARF1 . ISSM12 MODAF4
+
+    ISSM12          shift and go to state 60
+
+
+state 41
+
+    (29) proverb_9 -> FI3L9 MAF3OLBIH5 . FI3L10
+
+    FI3L10          shift and go to state 61
+
+
+state 42
+
+    (30) proverb_10 -> FI3L11 MAF3OLBIH6 . ISSM13 HARF2 FI3L12
+
+    ISSM13          shift and go to state 62
+
+
+state 43
+
+    (31) prov1 -> DELIMITER proverb_1 .
+
+    $end            reduce using rule 31 (prov1 -> DELIMITER proverb_1 .)
+
+
+state 44
+
+    (32) prov2 -> DELIMITER proverb_2 .
+
+    $end            reduce using rule 32 (prov2 -> DELIMITER proverb_2 .)
+
+
+state 45
+
+    (33) prov3 -> DELIMITER proverb_3 .
+
+    $end            reduce using rule 33 (prov3 -> DELIMITER proverb_3 .)
+
+
+state 46
+
+    (34) prov4 -> DELIMITER proverb_4 .
+
+    $end            reduce using rule 34 (prov4 -> DELIMITER proverb_4 .)
+
+
+state 47
+
+    (35) prov5 -> DELIMITER proverb_5 .
+
+    $end            reduce using rule 35 (prov5 -> DELIMITER proverb_5 .)
+
+
+state 48
+
+    (36) prov6 -> DELIMITER proverb_6 .
+
+    $end            reduce using rule 36 (prov6 -> DELIMITER proverb_6 .)
+
+
+state 49
+
+    (37) prov7 -> DELIMITER proverb_7 .
+
+    $end            reduce using rule 37 (prov7 -> DELIMITER proverb_7 .)
+
+
+state 50
+
+    (38) prov8 -> DELIMITER proverb_8 .
+
+    $end            reduce using rule 38 (prov8 -> DELIMITER proverb_8 .)
+
+
+state 51
+
+    (39) prov9 -> DELIMITER proverb_9 .
+
+    $end            reduce using rule 39 (prov9 -> DELIMITER proverb_9 .)
+
+
+state 52
+
+    (40) prov10 -> DELIMITER proverb_10 .
+
+    $end            reduce using rule 40 (prov10 -> DELIMITER proverb_10 .)
+
+
+state 53
+
+    (21) proverb_1 -> ISSM1 FI3L1 HARF1 . ISSM2
+
+    ISSM2           shift and go to state 63
+
+
+state 54
+
+    (22) proverb_2 -> HARF2 FI3L2 ISSM3 . FI3L3 ISSM4
+
+    FI3L3           shift and go to state 64
+
+
+state 55
+
+    (23) proverb_3 -> ISSM5 MODAF1 HARF3 . ISSM6 MODAF2
+
+    ISSM6           shift and go to state 65
+
+
+state 56
+
+    (24) proverb_4 -> ISSM7 MODAF3 FI3L4 . HARF1 ISSM8 MODAF2
+
+    HARF1           shift and go to state 66
+
+
+state 57
+
+    (25) proverb_5 -> FI3L5 MAF3OLBIH1 FA . FI3L5 MAF3OLBIH2
+
+    FI3L5           shift and go to state 67
+
+
+state 58
+
+    (26) proverb_6 -> FI3L6 HARF1 HARFNAFY . FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4
+
+    FI3L7           shift and go to state 68
+
+
+state 59
+
+    (27) proverb_7 -> ISSM9 KHABAR1 HARF1 . ISSM10
+
+    ISSM10          shift and go to state 69
+
+
+state 60
+
+    (28) proverb_8 -> ISSM11 HARF1 ISSM12 . MODAF4
+
+    MODAF4          shift and go to state 70
+
+
+state 61
+
+    (29) proverb_9 -> FI3L9 MAF3OLBIH5 FI3L10 .
+
+    $end            reduce using rule 29 (proverb_9 -> FI3L9 MAF3OLBIH5 FI3L10 .)
+
+
+state 62
+
+    (30) proverb_10 -> FI3L11 MAF3OLBIH6 ISSM13 . HARF2 FI3L12
+
+    HARF2           shift and go to state 71
+
+
+state 63
+
+    (21) proverb_1 -> ISSM1 FI3L1 HARF1 ISSM2 .
+
+    $end            reduce using rule 21 (proverb_1 -> ISSM1 FI3L1 HARF1 ISSM2 .)
+
+
+state 64
+
+    (22) proverb_2 -> HARF2 FI3L2 ISSM3 FI3L3 . ISSM4
+
+    ISSM4           shift and go to state 72
+
+
+state 65
+
+    (23) proverb_3 -> ISSM5 MODAF1 HARF3 ISSM6 . MODAF2
+
+    MODAF2          shift and go to state 73
+
+
+state 66
+
+    (24) proverb_4 -> ISSM7 MODAF3 FI3L4 HARF1 . ISSM8 MODAF2
+
+    ISSM8           shift and go to state 74
+
+
+state 67
+
+    (25) proverb_5 -> FI3L5 MAF3OLBIH1 FA FI3L5 . MAF3OLBIH2
+
+    MAF3OLBIH2      shift and go to state 75
+
+
+state 68
+
+    (26) proverb_6 -> FI3L6 HARF1 HARFNAFY FI3L7 . MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4
+
+    MAF3OLBIH3      shift and go to state 76
+
+
+state 69
+
+    (27) proverb_7 -> ISSM9 KHABAR1 HARF1 ISSM10 .
+
+    $end            reduce using rule 27 (proverb_7 -> ISSM9 KHABAR1 HARF1 ISSM10 .)
+
+
+state 70
+
+    (28) proverb_8 -> ISSM11 HARF1 ISSM12 MODAF4 .
+
+    $end            reduce using rule 28 (proverb_8 -> ISSM11 HARF1 ISSM12 MODAF4 .)
+
+
+state 71
+
+    (30) proverb_10 -> FI3L11 MAF3OLBIH6 ISSM13 HARF2 . FI3L12
+
+    FI3L12          shift and go to state 77
+
+
+state 72
+
+    (22) proverb_2 -> HARF2 FI3L2 ISSM3 FI3L3 ISSM4 .
+
+    $end            reduce using rule 22 (proverb_2 -> HARF2 FI3L2 ISSM3 FI3L3 ISSM4 .)
+
+
+state 73
+
+    (23) proverb_3 -> ISSM5 MODAF1 HARF3 ISSM6 MODAF2 .
+
+    $end            reduce using rule 23 (proverb_3 -> ISSM5 MODAF1 HARF3 ISSM6 MODAF2 .)
+
+
+state 74
+
+    (24) proverb_4 -> ISSM7 MODAF3 FI3L4 HARF1 ISSM8 . MODAF2
+
+    MODAF2          shift and go to state 78
+
+
+state 75
+
+    (25) proverb_5 -> FI3L5 MAF3OLBIH1 FA FI3L5 MAF3OLBIH2 .
+
+    $end            reduce using rule 25 (proverb_5 -> FI3L5 MAF3OLBIH1 FA FI3L5 MAF3OLBIH2 .)
+
+
+state 76
+
+    (26) proverb_6 -> FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 . WAW HARFNAFY FI3L8 MAF3OLBIH4
+
+    WAW             shift and go to state 79
+
+
+state 77
+
+    (30) proverb_10 -> FI3L11 MAF3OLBIH6 ISSM13 HARF2 FI3L12 .
+
+    $end            reduce using rule 30 (proverb_10 -> FI3L11 MAF3OLBIH6 ISSM13 HARF2 FI3L12 .)
+
+
+state 78
+
+    (24) proverb_4 -> ISSM7 MODAF3 FI3L4 HARF1 ISSM8 MODAF2 .
+
+    $end            reduce using rule 24 (proverb_4 -> ISSM7 MODAF3 FI3L4 HARF1 ISSM8 MODAF2 .)
+
+
+state 79
+
+    (26) proverb_6 -> FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW . HARFNAFY FI3L8 MAF3OLBIH4
+
+    HARFNAFY        shift and go to state 80
+
+
+state 80
+
+    (26) proverb_6 -> FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY . FI3L8 MAF3OLBIH4
+
+    FI3L8           shift and go to state 81
+
+
+state 81
+
+    (26) proverb_6 -> FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 . MAF3OLBIH4
+
+    MAF3OLBIH4      shift and go to state 82
+
+
+state 82
+
+    (26) proverb_6 -> FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4 .
+
+    $end            reduce using rule 26 (proverb_6 -> FI3L6 HARF1 HARFNAFY FI3L7 MAF3OLBIH3 WAW HARFNAFY FI3L8 MAF3OLBIH4 .)
+
